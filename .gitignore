@@ -1,0 +1,18 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Compilación
+[Bb]in/
+[Oo]bj/
+
+# Archivos de depuración
+*.pdb
+
+# NuGet
+packages/
+*.nupkg
+
+# Logs
+*.log
