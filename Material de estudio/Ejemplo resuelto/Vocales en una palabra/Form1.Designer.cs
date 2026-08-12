@@ -28,18 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            listBox1 = new ListBox();
+            textBox1 = new TextBox();
             SuspendLayout();
+            // 
+            // listBox1
+            // 
+            listBox1.Enabled = false;
+            listBox1.FormattingEnabled = true;
+            listBox1.HorizontalScrollbar = true;
+            listBox1.Location = new Point(381, 99);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(231, 139);
+            listBox1.TabIndex = 0;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(94, 143);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(141, 23);
+            textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(795, 432);
+            Controls.Add(textBox1);
+            Controls.Add(listBox1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private ListBox listBox1;
+        private TextBox textBox1;
     }
 }
